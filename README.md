@@ -126,6 +126,3 @@ This app is built with:
 
 ---
 
-## 📜 License
-MIT License – Free to use and build upon.
-
