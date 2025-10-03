@@ -4,51 +4,6 @@
 
 **URL**: https://lovable.dev/projects/9d501beb-71db-43e5-a60a-b492e83925da
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/9d501beb-71db-43e5-a60a-b492e83925da) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
 
@@ -60,14 +15,121 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+# HackTheSquid_AI_Uzhavar_Nanban
 
-Simply open [Lovable](https://lovable.dev/projects/9d501beb-71db-43e5-a60a-b492e83925da) and click on Share -> Publish.
+## WHY DOES THE ONE WHO FEEDS THE NATION SLEEP HUNGRY?
 
-## Can I connect a custom domain to my Lovable project?
+1. Why can’t the farmer get timely crop advice?
+2. Why does weather uncertainty affect the farmer’s yield?
+3. Why are farmers unable to earn what they sow?
+4. Why are middlemen taking unfair share of profits?
+5. Why Are Farmers Forced to Sell Fast - Even at a  Loss?
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+An AI-powered agriculture marketplace connecting **farmers, bulk vendors, and secondary buyers** with **voice-based access, transparent payments, and real-time logistics**.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Built with a focus on **accessibility, fairness, and scalability**.  
+Includes **Uzhavar_Nanban chatbot** and **custom voice bot** (developed by Akshayaa) for rural-friendly onboarding.
+
+
+---
+
+## 🚀 Live Demos  
+
+👉 Try the project here:  
+
+[![Chatbot Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_Chatbot-Live-green?style=for-the-badge)](https://app.ashna.ai/chat?agent=uzhavar-nanban-GHrIY)  
+[![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
+
+---
+
+## 👥 Target Users
+- **Small & Medium Farmers** → Fair market access, price transparency, easy onboarding (low digital literacy).  
+- **Bulk Vendors (End Consumers)** → Retailers, processors, restaurant chains demanding consistent, quality produce.  
+- **Secondary Buyers** → Animal feed makers, biofuel companies purchasing surplus produce.
+
+
+---
+
+## 🧠 Core Tech Features
+- **Voice AI** → Whisper, Bhashini, ElevenLabs for natural language access  
+- **Chatbot** → *Uzhavar_Nanban* (created by Akshayaa) for farmer guidance  
+- **Blockchain** → Smart contracts for instant, secure payments  
+- **Cloud Backend** → Firebase + PostgreSQL for real-time operations  
+- **Logistics** → Cold chain integration to preserve produce quality  
+- **Field Agents** → Local onboarding and training  
+
+---
+
+## 🚜 Platform Modules
+- **Farmer Onboarding** → IVR calls, WhatsApp bots, demos, and training  
+- **Voice-Based Access** → Vernacular chatbots and IVR systems  
+- **Market Intelligence** → AI insights on crop pricing & demand  
+- **Smart Contracts** → Automated, trustworthy transactions  
+- **Vendor Dashboard** → Bulk order management, payment history  
+- **Logistics** → Real-time delivery + cold storage tracking  
+
+---
+
+## 🌍 Benefits
+- Direct market access → Higher profits for farmers  
+- Voice-first access → Even for non-smartphone users  
+- AI-powered insights → Smart farming & pricing decisions  
+- Instant blockchain payments → No delays, no middlemen  
+- Transparent trade → Trust via smart contracts  
+- Quality logistics → Reduced spoilage, improved freshness  
+
+---
+
+## 💰 Revenue Model
+- Transaction Commission (5–15%)  
+- Premium Vendor Subscriptions  
+- Logistics Fees (storage & transport)  
+- Resale Revenue (surplus sales)  
+- Ethical Ads from agri-tech brands  
+
+---
+
+## 🏗️ Tech Stack
+- **Frontend** → Flutter / React Native  
+- **Backend** → Firebase + PostgreSQL  
+- **AI Modules** → Whisper, Bhashini, ElevenLabs  
+- **Chatbot** → Uzhavar_Nanban (Akshaya’s custom chatbot)  
+- **Blockchain** → Solidity smart contracts  
+- **Logistics** → GPS APIs + Cold chain integration  
+
+---
+
+## 🎥 Demo Videos
+- [Chatbot Walkthrough](https://drive.google.com/file/d/1a7PtchiuiDPY5IuAvKhZvKGSCUuYDeQP/view?usp=drive_link) 
+- [Voice Bot in Action](https://drive.google.com/file/d/19UqZTo1UpiucjwaHIctGHeS8B35zlvtY/view?usp=drive_link)  
+
+---
+
+## 📂 Documentation
+- [System Architecture](./docs/architecture-diagram.png)  
+- [Features](./docs/features.md)  
+- [Revenue Model](./docs/revenue-model.md)  
+
+
+---
+
+
+## 👩‍💻 Developer
+- **Akshayaa T**  
+  - Creator of *Uzhavar_Nanban chatbot*  
+  - Built *custom Voice Bot* using ElevenLabs, Whisper & Bhashini  
+  - Focus on **farmer-first design, accessible AI, and real-world scalability**  
+
+---
+
+## 🚀 Quick Access  
+
+[![Chatbot Demo](https://img.shields.io/badge/🌱_Chatbot-Live-green?style=for-the-badge)](https://app.ashna.ai/chat?agent=uzhavar-nanban-GHrIY)  
+[![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
+
+---
+
+## 📜 License
+MIT License – Free to use and build upon.
+
