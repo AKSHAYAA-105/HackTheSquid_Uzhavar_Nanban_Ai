@@ -1,20 +1,3 @@
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/9d501beb-71db-43e5-a60a-b492e83925da
-
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
 # HackTheSquid_AI_Uzhavar_Nanban
 
 ## WHY DOES THE ONE WHO FEEDS THE NATION SLEEP HUNGRY?
@@ -40,7 +23,11 @@ Includes **Uzhavar_Nanban chatbot** and **custom voice bot** (developed by Aksha
 
 [![Chatbot Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_Chatbot-Live-green?style=for-the-badge)](https://app.ashna.ai/chat?agent=uzhavar-nanban-GHrIY)  
 [![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
+[![App Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_app-Live-green?style=for-the-badge)](https://lovable.dev/projects/9d501beb-71db-43e5-a60a-b492e83925da)  
 
+## Project info
+
+**URL**: https://lovable.dev/projects/9d501beb-71db-43e5-a60a-b492e83925da
 ---
 
 ## 👥 Target Users
@@ -57,7 +44,16 @@ Includes **Uzhavar_Nanban chatbot** and **custom voice bot** (developed by Aksha
 - **Blockchain** → Smart contracts for instant, secure payments  
 - **Cloud Backend** → Firebase + PostgreSQL for real-time operations  
 - **Logistics** → Cold chain integration to preserve produce quality  
-- **Field Agents** → Local onboarding and training  
+- **Field Agents** → Local onboarding and training
+- ## What technologies are used for this app?
+
+This app is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
 ---
 
