@@ -14,6 +14,119 @@ export type Database = {
   }
   public: {
     Tables: {
+      crops: {
+        Row: {
+          created_at: string
+          crop_type: string
+          description: string | null
+          expected_price: number
+          farmer_id: string
+          harvest_date: string | null
+          id: string
+          image_url: string | null
+          location: string | null
+          minimum_price: number | null
+          quality_grade: Database["public"]["Enums"]["quality_grade"]
+          quantity: number
+          status: Database["public"]["Enums"]["crop_status"]
+          unit: string
+          updated_at: string
+          variety: string | null
+        }
+        Insert: {
+          created_at?: string
+          crop_type: string
+          description?: string | null
+          expected_price: number
+          farmer_id: string
+          harvest_date?: string | null
+          id?: string
+          image_url?: string | null
+          location?: string | null
+          minimum_price?: number | null
+          quality_grade?: Database["public"]["Enums"]["quality_grade"]
+          quantity: number
+          status?: Database["public"]["Enums"]["crop_status"]
+          unit?: string
+          updated_at?: string
+          variety?: string | null
+        }
+        Update: {
+          created_at?: string
+          crop_type?: string
+          description?: string | null
+          expected_price?: number
+          farmer_id?: string
+          harvest_date?: string | null
+          id?: string
+          image_url?: string | null
+          location?: string | null
+          minimum_price?: number | null
+          quality_grade?: Database["public"]["Enums"]["quality_grade"]
+          quantity?: number
+          status?: Database["public"]["Enums"]["crop_status"]
+          unit?: string
+          updated_at?: string
+          variety?: string | null
+        }
+        Relationships: []
+      }
+      orders: {
+        Row: {
+          buyback_guarantee: boolean | null
+          created_at: string
+          crop_id: string
+          delivery_preference: string | null
+          farmer_id: string
+          id: string
+          notes: string | null
+          offered_price: number
+          quantity: number
+          status: Database["public"]["Enums"]["order_status"]
+          total_amount: number
+          updated_at: string
+          vendor_id: string
+        }
+        Insert: {
+          buyback_guarantee?: boolean | null
+          created_at?: string
+          crop_id: string
+          delivery_preference?: string | null
+          farmer_id: string
+          id?: string
+          notes?: string | null
+          offered_price: number
+          quantity: number
+          status?: Database["public"]["Enums"]["order_status"]
+          total_amount: number
+          updated_at?: string
+          vendor_id: string
+        }
+        Update: {
+          buyback_guarantee?: boolean | null
+          created_at?: string
+          crop_id?: string
+          delivery_preference?: string | null
+          farmer_id?: string
+          id?: string
+          notes?: string | null
+          offered_price?: number
+          quantity?: number
+          status?: Database["public"]["Enums"]["order_status"]
+          total_amount?: number
+          updated_at?: string
+          vendor_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "orders_crop_id_fkey"
+            columns: ["crop_id"]
+            isOneToOne: false
+            referencedRelation: "crops"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       profiles: {
         Row: {
           communication_preference:
@@ -99,6 +212,15 @@ export type Database = {
     Enums: {
       app_role: "farmer" | "vendor" | "buyer"
       communication_method: "app" | "sms" | "voice" | "whatsapp"
+      crop_status: "fresh" | "ready" | "surplus" | "sold"
+      order_status:
+        | "pending"
+        | "negotiating"
+        | "confirmed"
+        | "in_transit"
+        | "delivered"
+        | "cancelled"
+      quality_grade: "premium" | "grade_a" | "grade_b" | "standard"
       user_language: "english" | "tamil" | "hindi" | "telugu" | "kannada"
     }
     CompositeTypes: {
@@ -229,6 +351,16 @@ export const Constants = {
     Enums: {
       app_role: ["farmer", "vendor", "buyer"],
       communication_method: ["app", "sms", "voice", "whatsapp"],
+      crop_status: ["fresh", "ready", "surplus", "sold"],
+      order_status: [
+        "pending",
+        "negotiating",
+        "confirmed",
+        "in_transit",
+        "delivered",
+        "cancelled",
+      ],
+      quality_grade: ["premium", "grade_a", "grade_b", "standard"],
       user_language: ["english", "tamil", "hindi", "telugu", "kannada"],
     },
   },
