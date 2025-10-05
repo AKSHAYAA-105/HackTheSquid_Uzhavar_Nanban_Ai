@@ -34,6 +34,28 @@ export default function Dashboard() {
       path: "/orders",
       color: "bg-blue-500/10 hover:bg-blue-500/20 border-blue-500/20",
     },
+    {
+      title: "AI Insights",
+      description: "Price trends and recommendations",
+      icon: () => (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      ),
+      path: "/insights",
+      color: "bg-purple-500/10 hover:bg-purple-500/20 border-purple-500/20",
+    },
+    {
+      title: "Support",
+      description: "Get help and report issues",
+      icon: () => (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      ),
+      path: "/support",
+      color: "bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/20",
+    },
   ];
 
   const vendorActions = [
@@ -50,6 +72,28 @@ export default function Dashboard() {
       icon: Package,
       path: "/orders",
       color: "bg-green-500/10 hover:bg-green-500/20 border-green-500/20",
+    },
+    {
+      title: "AI Insights",
+      description: "Market trends and analytics",
+      icon: () => (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      ),
+      path: "/insights",
+      color: "bg-purple-500/10 hover:bg-purple-500/20 border-purple-500/20",
+    },
+    {
+      title: "Support",
+      description: "Get help and support",
+      icon: () => (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      ),
+      path: "/support",
+      color: "bg-orange-500/10 hover:bg-orange-500/20 border-orange-500/20",
     },
   ];
 

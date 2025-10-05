@@ -65,25 +65,6 @@ export default function Signup() {
       if (error) throw error;
 
       if (data.user) {
-        // Create profile
-        const { error: profileError } = await supabase.from('profiles').insert({
-          user_id: data.user.id,
-          full_name: values.fullName,
-          phone_number: values.phone,
-          preferred_language: language,
-          onboarding_completed: false,
-        });
-
-        if (profileError) throw profileError;
-
-        // Create user role
-        const { error: roleError } = await supabase.from('user_roles').insert({
-          user_id: data.user.id,
-          role: role as 'farmer' | 'vendor' | 'buyer',
-        });
-
-        if (roleError) throw roleError;
-
         toast({
           title: 'Account created successfully!',
           description: 'Please complete your onboarding.',
