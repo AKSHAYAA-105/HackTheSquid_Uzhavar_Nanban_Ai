@@ -18,6 +18,7 @@ export default function Onboarding() {
   const { user, profile, refreshProfile } = useAuth();
   const { toast } = useToast();
   const [step, setStep] = useState(1);
+  const [loading, setLoading] = useState(false);
   const [language, setLanguage] = useState<Language>(
     (searchParams.get('lang') as Language) || profile?.preferred_language || 'english'
   );
@@ -30,20 +31,36 @@ export default function Onboarding() {
   const progress = (step / totalSteps) * 100;
 
   const handleComplete = async () => {
-    if (!user) return;
+    if (!user) {
+      toast({
+        title: 'Error',
+        description: 'User not found. Please try logging in again.',
+        variant: 'destructive',
+      });
+      return;
+    }
 
+    setLoading(true);
     try {
+      // Use upsert to handle cases where profile might not exist
       const { error } = await supabase
         .from('profiles')
-        .update({
+        .upsert([{
+          user_id: user.id,
+          full_name: profile?.full_name || '',
           preferred_language: language,
           communication_preference: communication,
           onboarding_completed: true,
-        })
-        .eq('user_id', user.id);
+        }], {
+          onConflict: 'user_id'
+        });
 
-      if (error) throw error;
+      if (error) {
+        console.error('Profile update error:', error);
+        throw error;
+      }
 
+      // Refresh profile to get updated data
       await refreshProfile();
 
       toast({
@@ -51,13 +68,17 @@ export default function Onboarding() {
         description: 'Your account is ready to use.',
       });
 
+      // Navigate to dashboard
       navigate('/dashboard');
     } catch (error: any) {
+      console.error('Onboarding completion error:', error);
       toast({
         title: 'Error',
         description: error.message || 'Failed to complete onboarding',
         variant: 'destructive',
       });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -150,11 +171,27 @@ export default function Onboarding() {
                 <p className="text-base"><strong>{t('auth.selectCommunication')}:</strong> {t(`comm.${communication}`)}</p>
               </div>
               <div className="flex gap-2">
-                <Button variant="outline" onClick={() => setStep(2)} className="flex-1 h-12 text-lg">
+                <Button 
+                  variant="outline" 
+                  onClick={() => setStep(2)} 
+                  className="flex-1 h-12 text-lg"
+                  disabled={loading}
+                >
                   {t('common.back')}
                 </Button>
-                <Button onClick={handleComplete} className="flex-1 h-12 text-lg">
-                  {t('common.continue')}
+                <Button 
+                  onClick={handleComplete} 
+                  className="flex-1 h-12 text-lg"
+                  disabled={loading}
+                >
+                  {loading ? (
+                    <>
+                      <CheckCircle2 className="mr-2 h-4 w-4 animate-spin" />
+                      Saving...
+                    </>
+                  ) : (
+                    t('common.continue')
+                  )}
                 </Button>
               </div>
             </CardContent>
