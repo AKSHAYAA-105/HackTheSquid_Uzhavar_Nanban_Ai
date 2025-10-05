@@ -27,7 +27,7 @@ Includes **Uzhavar_Nanban chatbot** and **custom voice bot** (developed by Aksha
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/9d501beb-71db-43e5-a60a-b492e83925da
+**URL**: https://mobile-magic-maker-77.lovable.app
 ---
 
 ## 👥 Target Users
@@ -123,6 +123,6 @@ This app is built with:
 
 [![Chatbot Demo](https://img.shields.io/badge/🌱_Chatbot-Live-green?style=for-the-badge)](https://app.ashna.ai/chat?agent=uzhavar-nanban-GHrIY)  
 [![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
-
+[![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
 ---
 
