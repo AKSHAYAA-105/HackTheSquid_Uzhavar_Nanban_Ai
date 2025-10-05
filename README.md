@@ -23,11 +23,11 @@ Includes **Uzhavar_Nanban chatbot** and **custom voice bot** (developed by Aksha
 
 [![Chatbot Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_Chatbot-Live-green?style=for-the-badge)](https://app.ashna.ai/chat?agent=uzhavar-nanban-GHrIY)  
 [![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
-[![App Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_app-Live-green?style=for-the-badge)](https://lovable.dev/projects/9d501beb-71db-43e5-a60a-b492e83925da)  
+[![App Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_app-Live-green?style=for-the-badge)](https://preview--mobile-magic-maker-77.lovable.app/onboarding?role=farmer&lang=english)  
 
 ## Project info
 
-**URL**: https://mobile-magic-maker-77.lovable.app
+**URL**: [https://mobile-magic-maker-77.lovable.app](https://preview--mobile-magic-maker-77.lovable.app/onboarding?role=farmer&lang=english)
 ---
 
 ## 👥 Target Users
