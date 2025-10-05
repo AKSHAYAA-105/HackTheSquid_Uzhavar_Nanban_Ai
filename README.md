@@ -23,11 +23,11 @@ Includes **Uzhavar_Nanban chatbot** and **custom voice bot** (developed by Aksha
 
 [![Chatbot Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_Chatbot-Live-green?style=for-the-badge)](https://app.ashna.ai/chat?agent=uzhavar-nanban-GHrIY)  
 [![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
-[![App Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_app-Live-green?style=for-the-badge)](https://preview--mobile-magic-maker-77.lovable.app/onboarding?role=farmer&lang=english)  
+[![App Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_app-Live-green?style=for-the-badge)](https://drive.google.com/file/d/1bCmjBZVVQVnUi-PcT3go0KD8eZwsHr8V/view?usp=drive_link)  
 
 ## Project info
 
-**URL**: [https://mobile-magic-maker-77.lovable.app](https://preview--mobile-magic-maker-77.lovable.app/onboarding?role=farmer&lang=english)
+**URL**: https://mobile-magic-maker-77.lovable.app/
 ---
 
 ## 👥 Target Users
@@ -98,7 +98,8 @@ This app is built with:
 
 ## 🎥 Demo Videos
 - [Chatbot Walkthrough](https://drive.google.com/file/d/1a7PtchiuiDPY5IuAvKhZvKGSCUuYDeQP/view?usp=drive_link) 
-- [Voice Bot in Action](https://drive.google.com/file/d/19UqZTo1UpiucjwaHIctGHeS8B35zlvtY/view?usp=drive_link)  
+- [Voice Bot in Action](https://drive.google.com/file/d/19UqZTo1UpiucjwaHIctGHeS8B35zlvtY/view?usp=drive_link)
+- [![App Demo](https://img.shields.io/badge/🌱_Uzhavar_Nanban_app-Live-green?style=for-the-badge)](https://drive.google.com/file/d/1bCmjBZVVQVnUi-PcT3go0KD8eZwsHr8V/view?usp=drive_link)  
 
 ---
 
@@ -123,6 +124,6 @@ This app is built with:
 
 [![Chatbot Demo](https://img.shields.io/badge/🌱_Chatbot-Live-green?style=for-the-badge)](https://app.ashna.ai/chat?agent=uzhavar-nanban-GHrIY)  
 [![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
-[![Voice Bot Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://elevenlabs.io/app/talk-to?agent_id=agent_6701k6macpycfj3a012aa2gc3jk4)  
+[![Uzhavar_Nanban APP Demo](https://img.shields.io/badge/🎙️_Voice_Bot-Live-blue?style=for-the-badge)](https://mobile-magic-maker-77.lovable.app/)  
 ---
 
